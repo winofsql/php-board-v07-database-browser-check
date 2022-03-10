@@ -25,20 +25,20 @@ $( function(){
     // フォーム送信イベント
     $("form").on("submit", function(){
 
-        var text = $("#text").val();
-        text = text.trim();
-        if ( text == "" ) {
-            // 本来の送信処理はキャンセルする
-            event.preventDefault();
-            toastr.error("本文を入力してください");
-        }
-
         var name = $("#name").val();
         name = name.trim();
         if ( name == "" ) {
             // 本来の送信処理はキャンセルする
             event.preventDefault();
             toastr.error("お名前を入力してください");
+        }
+
+        var text = $("#text").val();
+        text = text.trim();
+        if ( text == "" ) {
+            // 本来の送信処理はキャンセルする
+            event.preventDefault();
+            toastr.error("本文を入力してください");
         }
 
     });
