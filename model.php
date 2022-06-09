@@ -4,7 +4,8 @@
 // *************************************
 function check_post() {
 
-    file_put_contents("check_post.log", print_r($_POST,true));
+    // デバッグ用
+    file_put_contents("check_post.log", print_r($_POST,true) ,FILE_APPEND );
 
     global $error;
 
