@@ -69,7 +69,7 @@ $( function(){
             </div>
             <div>
                 <span class="title_entry">
-                    タイトル
+                    名前
                 </span>
                 <input
                     type="text"
